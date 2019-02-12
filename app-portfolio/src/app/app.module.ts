@@ -6,6 +6,9 @@ import { AppComponent } from "./app.component";
 import { ListasDePortfoliosComponent } from "./listas-de-portfolios/listas-de-portfolios.component";
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
+import { BodyPrincipalComponent } from './body-principal/body-principal.component';
+import { AltaYBajaComponent } from './alta-ybaja/alta-ybaja.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { FooterComponent } from "./footer/footer.component";
     HeaderComponent,
     ListasDePortfoliosComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BodyPrincipalComponent,
+    AltaYBajaComponent,
+    HomeComponent
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
