@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 A la eternidad
 
 Probando mi rama
@@ -5,3 +6,9 @@ Probando mi rama
 Hola chicos : )
 
 Final merge
+=======
+Como estais : )
+
+
+A la eternidad
+>>>>>>> JD
