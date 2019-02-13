@@ -1,3 +1,3 @@
-<app-listas-de-portfolios></app-listas-de-portfolios>
-<app-alta-ybaja></app-alta-ybaja>
-<app-home></app-home>
+<app-listas-de-portfolios *ngIf="numVista == 1"></app-listas-de-portfolios>
+<app-alta-ybaja *ngIf="numVista == 2"></app-alta-ybaja>
+<app-home *ngIf="numVista == 3"></app-home>

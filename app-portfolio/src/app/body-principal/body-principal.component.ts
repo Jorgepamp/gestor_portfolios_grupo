@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./body-principal.component.css']
 })
 export class BodyPrincipalComponent implements OnInit {
-
+  numVista : number;
   constructor() { }
 
   ngOnInit() {
+    this.numVista = 1;
   }
 
 }
