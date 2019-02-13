@@ -11,6 +11,7 @@ import { AltaYBajaComponent } from "./alta-ybaja/alta-ybaja.component";
 import { HomeComponent } from "./home/home.component";
 import { RouterModule, Routes } from "@angular/router";
 import { EliminarComponent } from "./eliminar/eliminar.component";
+import { CambioMenuService } from "./cambio-menu.service";
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
@@ -52,7 +53,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [CambioMenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
