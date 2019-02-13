@@ -1,8 +1,9 @@
 .footerGlobal {
   height: 200px;
-  bottom: 0;
   width: 100%;
   position: absolute;
+  float: bottom;
+  
 }
 
 #myFooter a {
