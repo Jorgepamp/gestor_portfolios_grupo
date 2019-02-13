@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 #div_listado{
     position: relative;
     height: 100%;
 }
+=======
+/*:host {
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    padding: 20px 10px;
+    background: #ccc;
+  }
+  
+  :host.is-open {
+    display: block;
+  }
+>>>>>>> a3773b9f8f968133ed5fe1cee288a347f3601adf
