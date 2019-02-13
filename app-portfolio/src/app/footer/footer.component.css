@@ -1,10 +1,16 @@
 .footerGlobal {
   height: 200px;
+<<<<<<< HEAD
+  bottom: 0;
+  width: 100%;
+  float: bottom;
+=======
 
   width: 100%;
   position: absolute;
   float: bottom;
   bottom: 0;
+>>>>>>> 4934bf600477720eea4d5c276741eefd10bb6e81
 }
 
 #myFooter a {
