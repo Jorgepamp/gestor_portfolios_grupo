@@ -1,19 +1,15 @@
-import { Component, OnInit, /*HostBinding*/ } from '@angular/core';
+import { Component, OnInit /*HostBinding*/ } from "@angular/core";
 
 @Component({
-  selector: 'app-listas-de-portfolios',
-  templateUrl: './listas-de-portfolios.component.html',
-  styleUrls: ['./listas-de-portfolios.component.css']
+  selector: "app-listas-de-portfolios",
+  templateUrl: "./listas-de-portfolios.component.html",
+  styleUrls: ["./listas-de-portfolios.component.css"]
 })
 export class ListasDePortfoliosComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
-
 
 /*export class SideBarComponent {
 
@@ -24,4 +20,4 @@ export class ListasDePortfoliosComponent implements OnInit {
     this.isOpen = !this.isOpen;
   }
 
-}
+}*/

@@ -1,20 +1,16 @@
-import { Component, OnInit, /*Input, HostListener*/ } from '@angular/core';
+import { Component, OnInit /*Input, HostListener*/ } from "@angular/core";
 /*import { SideBarComponent } from '../listas-de-portfolios/listas-de-portfolios.component';*/
 
 @Component({
-  selector: 'app-alta-ybaja',
-  templateUrl: './alta-ybaja.component.html',
-  styleUrls: ['./alta-ybaja.component.css']
+  selector: "app-alta-ybaja",
+  templateUrl: "./alta-ybaja.component.html",
+  styleUrls: ["./alta-ybaja.component.css"]
 })
 export class AltaYBajaComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
-
 
 /*export class SideBarToggleComponent {
 
@@ -25,4 +21,4 @@ export class AltaYBajaComponent implements OnInit {
     this.sideBar.toggle();
   }
 
-}
+}*/
