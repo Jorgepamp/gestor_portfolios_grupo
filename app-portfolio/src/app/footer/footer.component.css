@@ -1,6 +1,5 @@
 .footerGlobal {
-  height: 250px;
-  position: fixed;
+  height: 200px;
   bottom: 0;
   width: 100%;
 }
@@ -8,7 +7,6 @@
 #myFooter a {
   color: #e0e0e0;
   font-size: 18px;
-
 }
 
 .center {

@@ -1,16 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-body-principal',
-  templateUrl: './body-principal.component.html',
-  styleUrls: ['./body-principal.component.css']
+  selector: "app-body-principal",
+  templateUrl: "./body-principal.component.html",
+  styleUrls: ["./body-principal.component.css"]
 })
 export class BodyPrincipalComponent implements OnInit {
-  numVista : number;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-    this.numVista = 1;
-  }
-
+  ngOnInit() {}
 }
