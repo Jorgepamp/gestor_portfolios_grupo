@@ -20,8 +20,4 @@ export class ListasDePortfoliosComponent implements OnInit {
     this.isOpen = !this.isOpen;
   }
 
-<<<<<<< HEAD
 }*/
-=======
-}*/
->>>>>>> d7526c1804238fa1e87d1acb49929f46ae6d782c
