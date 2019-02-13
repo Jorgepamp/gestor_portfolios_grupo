@@ -10,7 +10,6 @@ export class BodyPrincipalComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.numVista = 1;
   }
 
 }
