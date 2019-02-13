@@ -1,10 +1,7 @@
 .footerGlobal {
-<<<<<<< HEAD
   height: 200px;
-=======
-  height: 250px;
->>>>>>> 5fbb594825cd92343ea85b8a556368332ace203a
   bottom: 0;
+  position: absolute;
   width: 100%;
 }
 

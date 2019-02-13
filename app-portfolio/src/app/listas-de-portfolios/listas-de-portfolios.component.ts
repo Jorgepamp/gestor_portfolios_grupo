@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, /*HostBinding*/ } from '@angular/core';
 
 @Component({
   selector: 'app-listas-de-portfolios',
@@ -15,7 +15,7 @@ export class ListasDePortfoliosComponent implements OnInit {
 }
 
 
-export class SideBarComponent {
+/*export class SideBarComponent {
 
   @HostBinding('class.is-open')
   isOpen = false;
