@@ -1,8 +1,15 @@
 .footerGlobal {
   height: 200px;
+<<<<<<< HEAD
+  width: 100%;
+  position: absolute;
+  float: bottom;
+  bottom: 0;
+=======
   bottom: 0;
   width: 100%;
   float: bottom;
+>>>>>>> 964f955e96eb4147a0e99cfbe44ad6e96797d588
 }
 
 #myFooter a {
@@ -30,3 +37,8 @@
   align-items: center;
   flex-direction: row;
 }
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 964f955e96eb4147a0e99cfbe44ad6e96797d588
