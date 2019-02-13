@@ -25,4 +25,4 @@ export class AltaYBajaComponent implements OnInit {
     this.sideBar.toggle();
   }
 
-}
+}*/
