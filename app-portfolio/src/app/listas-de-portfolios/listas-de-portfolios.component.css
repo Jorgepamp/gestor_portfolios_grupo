@@ -1,19 +1,1 @@
-/*:host {
-    box-sizing: border-box;
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 300px;
-    height: 100%;
-    padding: 20px 10px;
-    background: #ccc;
-  }
-  
-  :host.is-open {
-    display: block;
-<<<<<<< HEAD
 
-=======
->>>>>>> 964f955e96eb4147a0e99cfbe44ad6e96797d588
-  }*/

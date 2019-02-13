@@ -1,5 +1,4 @@
-import { Component, OnInit /*Input, HostListener*/ } from "@angular/core";
-/*import { SideBarComponent } from '../listas-de-portfolios/listas-de-portfolios.component';*/
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-alta-ybaja",
@@ -11,14 +10,3 @@ export class AltaYBajaComponent implements OnInit {
 
   ngOnInit() {}
 }
-
-/*export class SideBarToggleComponent {
-
-  @Input() sideBar: SideBarComponent;
-
-  @HostListener('click')
-  click() {
-    this.sideBar.toggle();
-  }
-
-}*/
