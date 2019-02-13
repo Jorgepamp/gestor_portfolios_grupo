@@ -10,6 +10,7 @@ import { BodyPrincipalComponent } from "./body-principal/body-principal.componen
 import { AltaYBajaComponent } from "./alta-ybaja/alta-ybaja.component";
 import { HomeComponent } from "./home/home.component";
 import { RouterModule, Routes } from "@angular/router";
+import { EliminarComponent } from './eliminar/eliminar.component';
 
 const appRoutes: Routes = [
   { path: "home", component: HomeComponent },
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     FooterComponent,
     BodyPrincipalComponent,
     AltaYBajaComponent,
-    HomeComponent
+    HomeComponent,
+    EliminarComponent
   ],
   imports: [
     RouterModule.forRoot(
