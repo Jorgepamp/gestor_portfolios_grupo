@@ -9,6 +9,25 @@ import { FooterComponent } from "./footer/footer.component";
 import { BodyPrincipalComponent } from "./body-principal/body-principal.component";
 import { AltaYBajaComponent } from "./alta-ybaja/alta-ybaja.component";
 import { HomeComponent } from "./home/home.component";
+import { RouterModule, Routes } from "@angular/router";
+
+const appRoutes: Routes = [
+  { path: "home", component: HomeComponent },
+  { path: "listado", component: ListasDePortfoliosComponent },
+  { path: "alta", component: AltaYBajaComponent },
+
+  { path: "", redirectTo: "/home", pathMatch: "full" }
+];
+
+/* {  path: 'listado',
+    component: ListasDePortfoliosComponent,
+    data: { title: 'Lista Portfolio' }
+  },
+  { path: '',
+    redirectTo: '/heroes',
+    pathMatch: 'full'
+  },
+  { path: '**', component: PageNotFoundComponent }*/
 
 @NgModule({
   declarations: [
@@ -21,7 +40,15 @@ import { HomeComponent } from "./home/home.component";
     AltaYBajaComponent,
     HomeComponent
   ],
-  imports: [BrowserModule, FormsModule, HttpModule],
+  imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    ),
+    BrowserModule,
+    FormsModule,
+    HttpModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
