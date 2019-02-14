@@ -12,14 +12,17 @@ export class AltaYBajaComponent implements OnInit {
   etiqueta_nombre: string;
   etiqueta_descripcion: string;
   etiqueta_archivo: string;
+  etiqueta_mensaje: string;
 
   placeholder_nombre: string;
   placeholder_descripcion: string;
   placeholder_archivo: string;
+  placeholder_mensaje: string;
 
   nombreIntroducido: string;
   descripcionIntroducido: string;
   archivoIntroducido: string;
+  mensajeIntroducido: string;
 
   servPortfolio: CambioMenuService;
 
@@ -42,15 +45,21 @@ export class AltaYBajaComponent implements OnInit {
     this.nombreIntroducido = "";
     this.descripcionIntroducido = "";
     this.archivoIntroducido = "";
+    this.etiqueta_mensaje = "";
     console.log("<<< Se limpia los campos >>>");
   }
   darAlta() {
-    this.servPortfolio.alta(
+    let msg = this.servPortfolio.alta(
       this.nombreIntroducido,
       this.descripcionIntroducido,
       this.archivoIntroducido
     );
-    this.limpiar();
+    console.log(this.descripcionIntroducido);
+    if (msg == "Ok") {
+      this.limpiar();
+    } else {
+      this.etiqueta_mensaje = "Completa todos los campos: " + msg;
+     }
     console.log("<<< Está dado de alta >>>");
   }
 }

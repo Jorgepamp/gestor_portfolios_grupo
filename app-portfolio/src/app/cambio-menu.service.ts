@@ -8,12 +8,21 @@ export class CambioMenuService {
     console.log("<<< CREANDO SERVICIO >>>");
     this.lista = new Array<Portfolio>();
   }
-  public alta(nombre: string, desc: string, fich: string): void {
+  public alta(nombre: string, desc: string, fich: string): string {
+    if (nombre == "" || typeof nombre == "undefined")
+    {
+      return 'Nombre mal';
+    } else if (desc == "" || typeof desc == "undefined") {
+      return 'Descripción mal';
+    } else if (fich == "" || typeof fich == "undefined") {
+      return 'Fichero mal';
+    } 
     let nuevoPortfolio: Portfolio;
     nuevoPortfolio = new Portfolio(nombre, desc, fich);
     //this.lista.push(nuevoPortfolio); // se añade el nuevo objeto que hemos creado al array Portfolio
     console.log("<<< ALTA PORTFOLIO " + nombre + ">>>");
     localStorage.setItem(nombre, JSON.stringify(nuevoPortfolio));
+    return "Ok"
   }
   public baja(nombre: string) {
     localStorage.removeItem(nombre);
