@@ -2,15 +2,16 @@
   {{ titulo }}
 
 </h2>
-{{etiqueta_nombre}}:<br />
-<input class="inputclass" type="text" [placeholder]="placeholder_nombre" [(ngModel)]="nombreIntroducido" />
+<div class="minAltura">
+  {{etiqueta_nombre}}:<br />
+  <input class="inputclass" type="text" [placeholder]="placeholder_nombre" [(ngModel)]="nombreIntroducido" />
 
-<br />{{etiqueta_descripcion}}:<br />
-<input class="inputclass" type="text" [placeholder]="placeholder_descripcion" [(ngModel)]="descripcionIntroducido" />
+  <br />{{etiqueta_descripcion}}:<br />
+  <input class="inputclass" type="text" [placeholder]="placeholder_descripcion" [(ngModel)]="descripcionIntroducido" />
 
-<br />{{etiqueta_archivo}}:<br />
-<input class="inputclass" type="text" [placeholder]="placeholder_archivo" [(ngModel)]="archivoIntroducido" />
+  <br />{{etiqueta_archivo}}:<br />
+  <input class="inputclass" type="text" [placeholder]="placeholder_archivo" [(ngModel)]="archivoIntroducido" />
 
-<br />
-<input class="inputButton" type="button" value="Añadir" (click)="darAlta()" /><input class="inputButton" type="button"
-  value="Limpiar" (click)="limpiar()" />
+  <br />
+  <input class="inputButton" type="button" value="Añadir" (click)="darAlta()" /><input class="inputButton" type="button"
+    value="Limpiar" (click)="limpiar()" /></div>
