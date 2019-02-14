@@ -1,24 +1,18 @@
 <div id="div_listado">
   <h2>Listado CVs y Portfolios</h2>
-  <h3>Usando de bootstrap: .table .table-striped .table-bordered .table-hover .table-sm</h3>
   <table class="table table-striped table-bordered table-hover table-sm">
     <thead>
       <tr>
         <th>Nombre</th>
         <th>Descripcion</th>
-        <th>Curriculum</th>
+        <th>Archivo Adjunto</th>
       </tr>
     </thead>
     <tbody id="tbody_lista_cvs">
-      <tr>
-        <td>Ana Perez</td>
-        <td>Desarrolladora Front-End maquetadora y programadora</td>
-        <td><a href="ejemplo_cv_1.html">Ver CV</a></td>
-      </tr>
-      <tr>
-        <td>Rubén González</td>
-        <td>Desarrollador Front-End maquetador y marketing</td>
-        <td><a href="ejemplo_cv_2.html">Ver CV</a></td>
+      <tr *ngFor="let unPortfolio of arrayPortfolios">
+        <td>{{ unPortfolio.getNombre() }}</td>
+        <td>{{ unPortfolio.getDescripcion() }}</td>
+        <td><a target="_blank" href="{{ unPortfolio.getArchivo() }}">Ver Archivo Adjunto</a></td>
       </tr>
     </tbody>
   </table>

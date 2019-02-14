@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { CambioMenuService } from "app/cambio-menu.service";
+import { Portfolio } from "app/portfolio";
 
 @Component({
   selector: "app-listas-de-portfolios",
@@ -6,7 +8,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./listas-de-portfolios.component.css"]
 })
 export class ListasDePortfoliosComponent implements OnInit {
-  constructor() {}
+  arrayPortfolios: Array<Portfolio>;
+  constructor(private servicioP: CambioMenuService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.arrayPortfolios = this.servicioP.listar();
+  }
 }

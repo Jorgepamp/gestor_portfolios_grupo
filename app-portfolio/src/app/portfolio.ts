@@ -12,4 +12,10 @@ export class Portfolio {
   getNombre() {
     return this.nombre;
   }
+  getDescripcion() {
+    return this.descripcion;
+  }
+  getArchivo() {
+    return this.archivo;
+  }
 }

@@ -11,22 +11,39 @@ export class CambioMenuService {
   public alta(nombre: string, desc: string, fich: string): void {
     let nuevoPortfolio: Portfolio;
     nuevoPortfolio = new Portfolio(nombre, desc, fich);
-    this.lista.push(nuevoPortfolio); // se añade el nuevo objeto que hemos creado al array Portfolio
+    //this.lista.push(nuevoPortfolio); // se añade el nuevo objeto que hemos creado al array Portfolio
     console.log("<<< ALTA PORTFOLIO " + nombre + ">>>");
+    localStorage.setItem(nombre, JSON.stringify(nuevoPortfolio));
   }
   public baja(nombre: string) {
-    for (var i = 0; i < this.lista.length; i++) {
-      if (
-        this.lista[i].getNombre().toLocaleLowerCase() ==
-        nombre.toLocaleLowerCase()
-      ) {
-        this.lista.splice(i, 1);
-      }
-    }
+    localStorage.removeItem(nombre);
+
+    // noh ace falta para el localSotrage
+    // for (var i = 0; i < this.lista.length; i++) {
+    //   if (
+    //     this.lista[i].getNombre().toLocaleLowerCase() ==
+    //     nombre.toLocaleLowerCase()
+    //   ) {
+    //     this.lista.splice(i, 1);
+    //   }
+    // }
     console.log("<<< BAJA PORTFOLIO " + nombre + ">>>");
     return;
   }
   public listar(): Array<Portfolio> {
+    this.lista = new Array<Portfolio>();
+    for (var i = 0, len = localStorage.length; i < len; ++i) {
+      var datosLista = JSON.parse(localStorage.getItem(localStorage.key(i)));
+      console.log(JSON.parse(localStorage.getItem(localStorage.key(i))));
+      this.lista.push(
+        new Portfolio(
+          datosLista.nombre,
+          datosLista.descripcion,
+          datosLista.archivo
+        )
+      );
+    }
+
     return this.lista;
   }
 }
