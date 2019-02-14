@@ -35,8 +35,8 @@ export class AltaYBajaComponent implements OnInit {
     // this.nombreIntroducido = "Voldemort";
     this.etiqueta_descripcion = "Descripción";
     this.placeholder_descripcion = "Introduzca una descripción";
-    this.etiqueta_archivo = "Archivo";
-    this.placeholder_archivo = "Introduzca un archivo";
+    this.etiqueta_archivo = "Link";
+    this.placeholder_archivo = "Introduzca un link";
   }
   limpiar() {
     this.nombreIntroducido = "";
