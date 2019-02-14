@@ -50,6 +50,7 @@ export class AltaYBajaComponent implements OnInit {
       this.descripcionIntroducido,
       this.archivoIntroducido
     );
+    this.limpiar();
     console.log("<<< Está dado de alta >>>");
   }
 }
