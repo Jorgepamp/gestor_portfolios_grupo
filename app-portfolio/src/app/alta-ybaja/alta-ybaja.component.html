@@ -4,13 +4,14 @@
 </h2>
 <div class="minAltura">
   {{etiqueta_nombre}}:<br />
-  <input class="inputclass" type="text" [placeholder]="placeholder_nombre" [(ngModel)]="nombreIntroducido" />
+  <input class="inputclass" type="text" [placeholder]="placeholder_nombre" [(ngModel)]="nombreIntroducido" required ="true" />
 
   <br />{{etiqueta_descripcion}}:<br />
-  <input class="inputclass" type="text" [placeholder]="placeholder_descripcion" [(ngModel)]="descripcionIntroducido" />
+<input class="inputclass" type="text" [placeholder]="placeholder_descripcion" [(ngModel)]="descripcionIntroducido"
+required="true" />
 
   <br />{{etiqueta_archivo}}:<br />
-  <input class="inputclass" type="text" [placeholder]="placeholder_archivo" [(ngModel)]="archivoIntroducido" />
+<input class="inputclass" type="text" [placeholder]="placeholder_archivo" [(ngModel)]="archivoIntroducido" required="true" />
 
   <br />
   <div class="row">
