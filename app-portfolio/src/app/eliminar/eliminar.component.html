@@ -5,12 +5,12 @@
 <p>{{etiqueta_nombre}}:<br />
   <input class="inputclass" type="text" [placeholder]="placeholder_nombre" (click)="limpiar()" [(ngModel)]="nombreIntroducido" />
   <input class="inputButton" type="button" value="Limpiar" (click)="limpiar()" />
+  <select [(ngModel)]="nombreIntroducido">
+    <option *ngFor="let p of arrayPortfolios" value="{{p.getNombre()}}">
+      {{p.getNombre()}}
+    </option>
+  </select>
   <br />
   <br />
   <input class="inputButton" type="button" value="Dar de Baja" (click)="darBaja()" />
 </p>
-<select [(ngModel)]="nombreIntroducido">
-  <option *ngFor="let p of arrayPortfolios" value="{{p.getNombre()}}">
-    {{p.getNombre()}}
-  </option>
-</select>
