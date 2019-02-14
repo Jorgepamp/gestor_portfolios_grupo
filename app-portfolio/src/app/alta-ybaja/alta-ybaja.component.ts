@@ -29,7 +29,7 @@ export class AltaYBajaComponent implements OnInit {
 
   ngOnInit() {
     // Método correspondiente al evento al iniicializar el componente
-    this.titulo = "Alta de portfolios";
+    this.titulo = "Alta de proyectos";
     this.etiqueta_nombre = "Nombre y Apellidos";
     this.placeholder_nombre = "Introduzca Nombre y Apellidos";
     // this.nombreIntroducido = "Voldemort";

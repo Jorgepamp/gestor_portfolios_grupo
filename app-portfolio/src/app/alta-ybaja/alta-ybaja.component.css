@@ -32,11 +32,13 @@
   background-repeat: no-repeat;
   padding-left: 10px;
   padding-right: 10px;
+  margin: 5px;
   cursor: pointer;
   overflow: hidden;
   outline: none;
   margin-top: 10px;
   color: #5b566b;
+  width: 120px;
 }
 
 .inputButton:hover {
