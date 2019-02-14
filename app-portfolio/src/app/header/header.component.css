@@ -7,21 +7,21 @@
     top: 0; 
     overflow: hidden; 
     width: 100%; 
-    float: left;  
     }
 
-.nav ul
+.center
     {
-    float: left; 
     list-style-type: none;
     position: relative; 
     margin: 0 auto; 
     padding: 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
     }
 
 .nav li
     {
-    float: left; 
     }
 
 .nav li a 
