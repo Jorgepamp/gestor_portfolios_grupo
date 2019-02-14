@@ -2,6 +2,12 @@
   color: #5b566b;
 }
 
+.minAltura {
+  min-height: 450px;
+
+
+}
+
 .inputclass {
   width: 250px;
   border: none;
