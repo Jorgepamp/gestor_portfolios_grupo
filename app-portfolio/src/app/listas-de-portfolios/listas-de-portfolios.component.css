@@ -1,7 +1,40 @@
 #div_listado {
   min-height: 450px;
-  display: flex;
-  /* justify-content: center; */
+  /*display: flex;
+  /* justify-content: center;
   align-items: center;
   flex-direction: column;
+  align-items: center; */
 }
+
+#tabla
+    { 
+    text-align: center; 
+    margin: 0 auto; 
+    width: 700px; 
+    background-color: white; 
+    border: 1px solid #ddd;
+    margin-top: 20px; 
+    }
+
+#tabla td:hover
+    {
+    background-color:#ddd;  
+    }
+
+#tabla th
+    {
+    padding-top: 12px;
+    padding-bottom: 12px;  
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #ddd;
+    }
+  
+#tabla td
+    {
+    background-color: white; 
+    border: 1px solid #ddd;
+    padding: 10px; 
+    }
