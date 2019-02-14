@@ -4,7 +4,6 @@
 </h2>
 <p class="minAltura">{{etiqueta_nombre}}:<br />
   <input class="inputclass" type="text" [placeholder]="placeholder_nombre" (click)="limpiar()" [(ngModel)]="nombreIntroducido" />
-  <input class="inputButton" type="button" value="Limpiar" (click)="limpiar()" />
   <select [(ngModel)]="nombreIntroducido">
     <option *ngFor="let p of arrayPortfolios" value="{{p.getNombre()}}">
       {{p.getNombre()}}

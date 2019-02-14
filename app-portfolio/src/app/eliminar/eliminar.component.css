@@ -1,10 +1,16 @@
 .hStyle {
   color: #5b566b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .minAltura {
   min-height: 450px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 }
 
