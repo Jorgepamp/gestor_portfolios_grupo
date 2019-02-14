@@ -19,7 +19,7 @@ export class EliminarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titulo = "Baja de portfolios";
+    this.titulo = "Baja de proyectos";
     this.etiqueta_nombre = "Nombre y Apellidos";
     this.placeholder_nombre = "Introduzca Nombre y Apellidos";
     this.arrayPortfolios = this.servPortfolio.listar();

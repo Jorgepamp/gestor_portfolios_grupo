@@ -24,7 +24,7 @@
 .centerCopy {
   display: flex;
   background-color: black;
-  color: rgb(133, 133, 133);
+  color: white; 
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
