@@ -7,6 +7,13 @@
   align-items: center; */
 }
 
+.hStyle {
+    color: #5b566b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 #tabla
     { 
     text-align: center; 
@@ -14,7 +21,7 @@
     width: 700px; 
     background-color: white; 
     border: 1px solid #ddd;
-    margin-top: 20px; 
+    margin-top: 60px; 
     }
 
 #tabla td:hover
