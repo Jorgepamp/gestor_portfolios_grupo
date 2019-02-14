@@ -28,6 +28,7 @@ export class AltaYBajaComponent implements OnInit {
 
   constructor(sp: CambioMenuService) {
     this.servPortfolio = sp;
+    this.etiqueta_mensaje = ""; 
   }
 
   ngOnInit() {

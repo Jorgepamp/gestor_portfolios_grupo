@@ -51,3 +51,11 @@
   /*box-shadow: 0 5px rgb(182, 182, 182);*/
   transform: translateY(4px);
 }
+
+.checkmark
+  {
+  /*color: red; */
+  border: 2px solid red; 
+  border-radius:8px; 
+  padding: 5px 5px 5px 5px;
+  }
